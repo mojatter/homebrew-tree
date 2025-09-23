@@ -5,20 +5,20 @@
 class Tq < Formula
   desc "tq is a portable command-line JSON/YAML processor."
   homepage "https://github.com/jarxorg/tree#tq"
-  version "0.8.3"
+  version "0.8.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jarxorg/tree/releases/download/v0.8.3/tree_0.8.3_darwin_amd64.tar.gz"
-      sha256 "db33e670e41bccb4fcfb9e13615da57b45a7604f9994b30cc7a6bf22475798af"
+      url "https://github.com/jarxorg/tree/releases/download/v0.8.4/tree_0.8.4_darwin_amd64.tar.gz"
+      sha256 "1d1ee85ddb69a9ce73560576c8be6499742015dc0e0f0ce3a55e1337534c8209"
 
       def install
         bin.install "tq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jarxorg/tree/releases/download/v0.8.3/tree_0.8.3_darwin_arm64.tar.gz"
-      sha256 "306eed4c183765d4e6535dd6b442e79b77060db54a0938d886762c8803f1d6f9"
+      url "https://github.com/jarxorg/tree/releases/download/v0.8.4/tree_0.8.4_darwin_arm64.tar.gz"
+      sha256 "2dee5237e66027525ae7dc59f4b5673df9c6b29183305bae50fe18ff3a9e1a34"
 
       def install
         bin.install "tq"
@@ -27,16 +27,16 @@ class Tq < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jarxorg/tree/releases/download/v0.8.3/tree_0.8.3_linux_amd64.tar.gz"
-      sha256 "2c697c5586254aaaae68887ad7de9053431e657f9dff25cce1482693bb2d8bd3"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/jarxorg/tree/releases/download/v0.8.4/tree_0.8.4_linux_amd64.tar.gz"
+      sha256 "a4ef490388e062e05597ad86a49e85ab03885b0c049778961aee6bba18e84018"
       def install
         bin.install "tq"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jarxorg/tree/releases/download/v0.8.3/tree_0.8.3_linux_arm64.tar.gz"
-      sha256 "af54afcb27f76152968d4b94752cc7e3d9b793c2ab788e27f9fa6a1099c3cfea"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/jarxorg/tree/releases/download/v0.8.4/tree_0.8.4_linux_arm64.tar.gz"
+      sha256 "6e9669c1edf7d3bc12b1490ade3d86a040fbf5a320b83c3ad0fdde8744eac2a4"
       def install
         bin.install "tq"
       end
