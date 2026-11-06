@@ -5,20 +5,20 @@
 class Tq < Formula
   desc "tq is a portable command-line JSON/YAML processor."
   homepage "https://github.com/mojatter/tree#tq"
-  version "0.17.0"
+  version "0.18.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mojatter/tree/releases/download/v0.17.0/tree_0.17.0_darwin_amd64.tar.gz"
-      sha256 "ec90bf27807e8a7421e6692a891f47b986964153cdf9ca2da233512803b0c3b1"
+      url "https://github.com/mojatter/tree/releases/download/v0.18.0/tree_0.18.0_darwin_amd64.tar.gz"
+      sha256 "265adb728eaf67a4abad1dbcc189024900d898509a7e439345710a54e5d5ce40"
 
       define_method(:install) do
         bin.install "tq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mojatter/tree/releases/download/v0.17.0/tree_0.17.0_darwin_arm64.tar.gz"
-      sha256 "719b5f73c4bb7ea1a26c0b33ddaf0d70e4d5b04fe8b828353142aa06f2f98aa2"
+      url "https://github.com/mojatter/tree/releases/download/v0.18.0/tree_0.18.0_darwin_arm64.tar.gz"
+      sha256 "d084c1f9cfac24abc63ae33a5cbc720ae2150a46dcebbfb080b39c433eae7d6e"
 
       define_method(:install) do
         bin.install "tq"
@@ -28,15 +28,15 @@ class Tq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mojatter/tree/releases/download/v0.17.0/tree_0.17.0_linux_amd64.tar.gz"
-      sha256 "447ef046dbb35bca7bab1350323a25347cd1f6431630fb03e63f70218d7a87fe"
+      url "https://github.com/mojatter/tree/releases/download/v0.18.0/tree_0.18.0_linux_amd64.tar.gz"
+      sha256 "96c633905119b6fcf1b3fcb0335142ca78684fd8517da2f07a05333bc34cd9b9"
       define_method(:install) do
         bin.install "tq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mojatter/tree/releases/download/v0.17.0/tree_0.17.0_linux_arm64.tar.gz"
-      sha256 "6f59a6ceb1efb0fd1f8b59d2ff5ffbfe478164ed604ab2aa232c46d5723c0ea8"
+      url "https://github.com/mojatter/tree/releases/download/v0.18.0/tree_0.18.0_linux_arm64.tar.gz"
+      sha256 "102d309c64595c958e0fce8956f9fde46dc17fe44bad6ef8a54504e66574daf1"
       define_method(:install) do
         bin.install "tq"
       end
